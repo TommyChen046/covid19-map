@@ -13,7 +13,7 @@ const Covid19 = () => {
 
   const load = () => {
     console.log("load");
-    const loadCountriesTask = new LoadCountriesTask();
+    const loadCountriesTask = new LoadCountriesTask('online');
     loadCountriesTask.load((countries) => setCountries(countries));
   };
 

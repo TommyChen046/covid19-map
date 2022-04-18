@@ -3,7 +3,7 @@ import LegendItem from "./LengendItem";
 var legendItems = [
   new LegendItem(
     "1,000,000 +",
-    "#741f1f",
+    "#006633",
     // "#8b0000",
     (cases) => cases >= 1_000_000,
     "white"
@@ -11,27 +11,27 @@ var legendItems = [
 
   new LegendItem(
     "500,000 - 999,999",
-    // "#741f1f",
-    "#9c2929",
+    "#009900",
+    // "#9c2929",
     (cases) => cases >= 500_000 && cases < 1_000_000,
     "White"
   ),
 
   new LegendItem(
     "200,000 - 499,999",
-    "#c57f7f",
+    "#66cc00",
     (cases) => cases >= 200_000 && cases < 500_000
   ),
 
   new LegendItem(
     "50,000 - 199,999",
-    "#d8aaaa",
+    "#cccc00",
     (cases) => cases >= 50_000 && cases < 200_000
   ),
 
   new LegendItem(
     "0 - 49,999",
-    "#ebd4d4",
+    "#ffff99",
     (cases) => cases > 0 && cases < 50_000
   ),
 
